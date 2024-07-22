@@ -58,4 +58,15 @@ public class StudentRepository : IStudentRepository
         }
         return students;
     }
+    public void UpdateStudent(Student student)
+    {
+        _context.Students.Update(student);
+        _context.SaveChanges();
+    }
+    public void UpdateEnrollment(Enrollment enrollment)
+    {
+        _context.Enrollments.Update(enrollment);
+        _context.SaveChanges();
+    }
+
 }

@@ -39,4 +39,39 @@ public class TeacherController : ControllerBase
             return StatusCode(500, $"Internal server error: {ex.Message}");
         }
     }
+    [HttpPost("{studentId}/courses/{courseId}/grade")]
+    public IActionResult SetGrade(long studentId, long courseId, [FromBody] GradeRequest request)
+    {
+        if (request == null || request.Grade < 0 || request.Grade > 20)
+        {
+            return BadRequest("Invalid grade");
+        }
+        try
+        {
+            _teacherServices.SetGrade(studentId, courseId, request.Grade);
+            return Ok("Grade set successfully");
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
+
+    [HttpPost("{studentId}/profile-picture")]
+    public IActionResult UploadProfilePicture(long studentId, [FromForm] IFormFile profilePicture)
+    {
+        try
+        {
+            _teacherServices.UploadProfilePicture(studentId, profilePicture);
+            return Ok("Profile picture uploaded successfully");
+        }
+        catch (Exception ex)
+        {
+           return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
+    public class GradeRequest
+    {
+        public double Grade { get; set; }
+    }
 }

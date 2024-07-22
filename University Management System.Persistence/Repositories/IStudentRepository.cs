@@ -8,4 +8,6 @@ public interface IStudentRepository
     public void AddEnrollment(Enrollment enrollment);
     public bool IsEnrolled(long studentId, long courseId);
     public IEnumerable<Student> GetAll();
+    public void UpdateStudent(Student student);
+    public void UpdateEnrollment(Enrollment enrollment);
 }
