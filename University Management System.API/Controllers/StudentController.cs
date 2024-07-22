@@ -6,6 +6,7 @@ namespace University_Management_System.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[ApiVersion("1.0")]
 public class StudentController : ControllerBase
 {
     private readonly StudentService _studentService;

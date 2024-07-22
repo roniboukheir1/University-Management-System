@@ -31,6 +31,8 @@ builder.Services.AddScoped<TeacherServices>();
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<StudentService>();
 
+builder.Services.AddMemoryCache();
+
 // Configure logging
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();

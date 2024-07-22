@@ -7,6 +7,7 @@ namespace University_Management_System.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+[ApiVersion("1.0")]
 public class TeacherController : ControllerBase
 {
 

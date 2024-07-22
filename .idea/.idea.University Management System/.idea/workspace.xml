@@ -10,160 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdfcadb7-d074-4a21-a4e6-f0336a968037" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.University Management System/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.University_Management_System/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.University_Management_System/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.University_Management_System/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.University_Management_System/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/Controllers/CourseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/Controllers/StudentController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/Controllers/TeacherController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/University Management System.API.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/University Management System.API.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/Debug/net8.0/University Management System.API.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/Debug/net8.0/University Management System.API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/Debug/net8.0/University Management System.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/Debug/net8.0/University Management System.API.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/Debug/net8.0/University Management System.API.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/Debug/net8.0/University Management System.API.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/University Management System.API.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/University Management System.API.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/University Management System.API.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.API/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/Commands/CreateCourseCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/Services/CourseService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/Services/StudentService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/Services/TeacherServices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/University Management System.Application.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/Debug/net8.0/University Management System.Application.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/Debug/net8.0/University Management System.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/Debug/net8.0/University Management System.Application.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/Debug/net8.0/University Management System.Application.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/Debug/net8.0/University Management System.Application.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/Debug/net8.0/University Management System.Application.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/University Management System.Application.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/University Management System.Application.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/University Management System.Application.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/Exceptions/NotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/University Management System.Common.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/Debug/net8.0/University Management System.Common.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/Debug/net8.0/University Management System.Common.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/Debug/net8.0/University Management System.Common.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/Debug/net8.0/University Management System.Common.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/Debug/net8.0/University Management System.Common.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/University Management System.Common.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/University Management System.Common.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/University Management System.Common.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Common/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/University Management System.Domain.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/Debug/net8.0/University Management System.Domain.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/Debug/net8.0/University Management System.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/Debug/net8.0/University Management System.Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/Debug/net8.0/University Management System.Domain.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/Debug/net8.0/University Management System.Domain.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/University Management System.Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/University Management System.Domain.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/University Management System.Domain.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/University Management System.Infrastructure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/ClassLibrary1University Management System.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/ClassLibrary1University Management System.Infrastructure.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/ClassLibrary1University Management System.Infrastructure.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/ClassLibrary1University Management System.Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/ClassLibrary1University Management System.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/ClassLibrary1University Management System.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/ClassLibrary1University Management System.Infrastructure.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/ClassLibrary1University Management System.Infrastructure.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/University Management System.Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/University Management System.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/University Management System.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/University Management System.Infrastructure.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/Debug/net8.0/University Management System.Infrastructure.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/University Management System.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/University Management System.Infrastructure.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/University Management System.Infrastructure.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Migrations/20240721115112_AddTimeSlot.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Migrations/20240721115112_AddTimeSlot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Migrations/PostgresContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Models/Course.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Models/Enrollment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Models/PostgresContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Models/Student.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Models/Teacher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Models/TimeSlotModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Models/enums/DayPattern.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Repositories/CourseRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Repositories/ICourseRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Repositories/IStudentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Repositories/ITeacherRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Repositories/StudentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/Repositories/TeacherRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/University Management System.Persistence.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/bin/Debug/net8.0/University Management System.Persistence.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/bin/Debug/net8.0/University Management System.Persistence.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/bin/Debug/net8.0/University Management System.Persistence.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/bin/Debug/net8.0/University Management System.Persistence.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.sourcelink.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/ref/University Management System.Persistence.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/refint/University Management System.Persistence.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/University Management System.Persistence.csproj.EntityFrameworkCore.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/University Management System.Persistence.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/University Management System.Persistence.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/University Management System.Persistence.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/University_Management_System.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.University Management System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.University Management System/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University Management System.API/Controllers/CourseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/University Management System.API/Controllers/CourseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University Management System.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/University Management System.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University Management System.Application/Services/CourseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/University Management System.Application/Services/CourseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University Management System.Persistence/Repositories/CourseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/University Management System.Persistence/Repositories/CourseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/Debug/net8.0/University Management System.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University Management System.Persistence/obj/University Management System.Persistence.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/University Management System.Persistence.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University Management System.Persistence/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University Management System.Persistence/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University Management System.Persistence/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/University Management System.Persistence/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +54,7 @@
     &quot;.NET Launch Settings Profile.University Management System.API: IIS Express.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.University Management System.API: https.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/004-add-caching&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -293,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721558705899</updated>
-      <workItem from="1721558706907" duration="22003000" />
+      <workItem from="1721558706907" duration="22759000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using University_Management_System.Application.Commands;
 using University_Management_System.Common.Exceptions;
 using University_Management_System.Persistence.Models;
@@ -10,6 +11,7 @@ namespace University_Management_System.API.Controllers;
 [ApiController]
 [Route("admin/[controller]")]
 //[Authorize(Roles = "Admin")]
+[ApiVersion("1.0")]
 public class CourseController : ControllerBase
 {
 
@@ -31,6 +33,17 @@ public class CourseController : ControllerBase
     public IActionResult GetCourses()
     {
         return Ok(_courseService.GetAll());
+    }
+    [HttpGet("{id}")]
+    [EnableQuery]
+    public IActionResult Get(long id)
+    {
+        var course = _courseService.GetById(id);
+        if (course == null)
+        {
+            return NotFound();
+        }
+        return Ok(course);
     }
 
     [HttpGet("GetById/{id}")]
