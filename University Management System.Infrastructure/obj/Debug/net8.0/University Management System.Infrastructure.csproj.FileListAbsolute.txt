@@ -1,0 +1,12 @@
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\University Management System.Infrastructure.deps.json
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\University Management System.Infrastructure.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\University Management System.Infrastructure.pdb
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.AssemblyInfo.cs
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.sourcelink.json
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\refint\University Management System.Infrastructure.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.pdb
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\ref\University Management System.Infrastructure.dll

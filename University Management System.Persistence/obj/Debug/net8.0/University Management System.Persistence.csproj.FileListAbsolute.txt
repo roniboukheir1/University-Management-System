@@ -1,0 +1,18 @@
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\University Management System.Persistence.deps.json
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\University Management System.Persistence.runtimeconfig.json
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\University Management System.Persistence.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\University Management System.Persistence.pdb
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\University Management System.Common.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\University Management System.Common.pdb
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\University Management System.Persistence.csproj.AssemblyReference.cache
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\University Management System.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\University Management System.Persistence.AssemblyInfoInputs.cache
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\University Management System.Persistence.AssemblyInfo.cs
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\University Management System.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\University Management System.Persistence.sourcelink.json
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\Universi.FE27F74A.Up2Date
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\University Management System.Persistence.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\refint\University Management System.Persistence.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\University Management System.Persistence.pdb
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\University Management System.Persistence.genruntimeconfig.cache
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\obj\Debug\net8.0\ref\University Management System.Persistence.dll
