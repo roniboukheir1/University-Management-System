@@ -188,6 +188,32 @@ namespace ClassLibrary1University_Management_System.Infrastructure.Migrations
                     b.ToTable("SessionTime", (string)null);
                 });
 
+            modelBuilder.Entity("University_Management_System.Domain.Models.StudentCourseGrade", b =>
+                {
+                    b.Property<long>("StudentCourseGradeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("StudentCourseGradeId"));
+
+                    b.Property<long>("CourseId")
+                        .HasColumnType("bigint");
+
+                    b.Property<decimal>("Grade")
+                        .HasColumnType("numeric");
+
+                    b.Property<long>("StudentId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("StudentCourseGradeId");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("StudentCourseGrades");
+                });
+
             modelBuilder.Entity("University_Management_System.Domain.Models.User", b =>
                 {
                     b.Property<long>("Id")
@@ -219,6 +245,21 @@ namespace ClassLibrary1University_Management_System.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
+
+                    b.UseTptMappingStrategy();
+                });
+
+            modelBuilder.Entity("University_Management_System.Domain.Models.Student", b =>
+                {
+                    b.HasBaseType("University_Management_System.Domain.Models.User");
+
+                    b.Property<double>("AverageGrade")
+                        .HasColumnType("double precision");
+
+                    b.Property<bool>("CanApplyToFrance")
+                        .HasColumnType("boolean");
+
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("University_Management_System.Domain.Models.Class", b =>
@@ -283,6 +324,25 @@ namespace ClassLibrary1University_Management_System.Infrastructure.Migrations
                     b.Navigation("SessionTime");
                 });
 
+            modelBuilder.Entity("University_Management_System.Domain.Models.StudentCourseGrade", b =>
+                {
+                    b.HasOne("University_Management_System.Domain.Models.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("University_Management_System.Domain.Models.Student", "Student")
+                        .WithMany("StudentCourseGrades")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("University_Management_System.Domain.Models.User", b =>
                 {
                     b.HasOne("University_Management_System.Domain.Models.Role", "Role")
@@ -293,6 +353,17 @@ namespace ClassLibrary1University_Management_System.Infrastructure.Migrations
                         .HasConstraintName("users_role_id_fk");
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("University_Management_System.Domain.Models.Student", b =>
+                {
+                    b.HasOne("University_Management_System.Domain.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("University_Management_System.Domain.Models.Class", b =>
@@ -322,6 +393,11 @@ namespace ClassLibrary1University_Management_System.Infrastructure.Migrations
                     b.Navigation("ClassEnrollments");
 
                     b.Navigation("TeacherPerCourses");
+                });
+
+            modelBuilder.Entity("University_Management_System.Domain.Models.Student", b =>
+                {
+                    b.Navigation("StudentCourseGrades");
                 });
 #pragma warning restore 612, 618
         }

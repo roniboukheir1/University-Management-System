@@ -1,77 +1,56 @@
-/*using Microsoft.AspNetCore.Mvc;
-using University_Management_System.Common.Exceptions;
+using Microsoft.AspNetCore.Mvc;
+using MediatR;
 using University_Management_System.Domain.Models;
-using University_Management_System.Persistence.Services;
+using Microsoft.AspNetCore.OData.Query;
+using University_Management_System.Application.Commands.TeacherCommand;
+using University_Management_System.Application.Queries.TeacherQuery;
 
-namespace University_Management_System.API.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-[ApiVersion("1.0")]
-public class TeacherController : ControllerBase
+namespace University_Management_System.API.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
+    public class TeacherController : ControllerBase
+    {
+        private readonly IMediator _mediator;
 
-    private readonly TeacherServices _teacherServices;
+        public TeacherController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
 
-    public TeacherController(TeacherServices teacherServices)
-    {
-        _teacherServices = teacherServices;
-    }
+        [HttpGet]
+        [EnableQuery]
+        public async Task<ActionResult<IEnumerable<Teacher>>> GetAllTeachers()
+        {
+            var query = new GetAllTeachersQuery();
+            var result = await _mediator.Send(query);
+            return Ok(result);
+        }
 
-    [HttpPut("RegisterTeacher")]
-    public IActionResult RegisterTeacher([FromQuery] TimeSlotModel model)
-    {
-        try
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Teacher>> GetTeacherById(long id)
         {
-            _teacherServices.registerTeacher(model);
-            return Ok("Success");
+            var query = new GetTeacherByIdQuery { TeacherId = id };
+            var result = await _mediator.Send(query);
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
         }
-        catch (NotFoundException ex)
-        {
-            return NotFound(ex.Message);
-        }
-        catch (ArgumentNullException ex)
-        {
-            return BadRequest(ex.Message);
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(500, $"Internal server error: {ex.Message}");
-        }
-    }
-    [HttpPost("{studentId}/courses/{courseId}/grade")]
-    public IActionResult SetGrade(long studentId, long courseId, [FromBody] GradeRequest request)
-    {
-        if (request == null || request.Grade < 0 || request.Grade > 20)
-        {
-            return BadRequest("Invalid grade");
-        }
-        try
-        {
-            _teacherServices.SetGrade(studentId, courseId, request.Grade);
-            return Ok("Grade set successfully");
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(500, $"Internal server error: {ex.Message}");
-        }
-    }
 
-    /*[HttpPost("{studentId}/profile-picture")]
-    public IActionResult UploadProfilePicture(long studentId, [FromForm] IFormFile profilePicture)
-    {
-        try
+        [HttpPost("AddCourse")]
+        public async Task<IActionResult> AddCourse([FromBody] AddCourseCommand command)
         {
-            _teacherServices.UploadProfilePicture(studentId, profilePicture);
-            return Ok("Profile picture uploaded successfully");
+            await _mediator.Send(command);
+            return Ok();
         }
-        catch (Exception ex)
+
+        [HttpPost("AddSession")]
+        public async Task<IActionResult> AddSession([FromBody] AddSessionCommand command)
         {
-           return StatusCode(500, $"Internal server error: {ex.Message}");
+            await _mediator.Send(command);
+            return Ok();
         }
-    }#1#
-    public class GradeRequest
-    {
-        public double Grade { get; set; }
     }
-}*/
+}

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using University_Management_System.Application.Commands.StudentCommand;
 using University_Management_System.Application.Handlers.StudentHandlers;
 using University_Management_System.Application.Queries.StudentQuery;
+using University_Management_System.Domain.Models;
 
 namespace University_Management_System.API.Controllers;
 
@@ -42,5 +43,12 @@ public class StudentController : ControllerBase
    {
       var query = new GetAllStudentsQuery();
       return Ok(await _mediator.Send(query));
+   }
+
+   [HttpPost("AddStudent")]
+   public async Task<IActionResult> AddStudent([FromBody] AddStudentCommand command)
+   {
+      var studentId = await _mediator.Send(command);
+      return CreatedAtAction(nameof(GetById), new { id = studentId }, command);
    }
 }

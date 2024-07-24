@@ -6,4 +6,4 @@ public class AddEnrollmentCommand : IRequest
 {
     public long StudentId { get; set; }
     public long ClassId { get; set; }
-}
+}   

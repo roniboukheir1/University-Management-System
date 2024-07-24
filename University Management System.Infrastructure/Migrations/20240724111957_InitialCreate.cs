@@ -7,12 +7,18 @@ using NpgsqlTypes;
 
 namespace ClassLibrary1University_Management_System.Infrastructure.Migrations
 {
-    /// <inheritdoc />
     public partial class InitialCreate : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.Sql("CREATE SEQUENCE IF NOT EXISTS \"Users_id_seq\" START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;");
+            migrationBuilder.Sql("CREATE SEQUENCE IF NOT EXISTS \"Class_Id_seq\" START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;");
+            migrationBuilder.Sql("CREATE SEQUENCE IF NOT EXISTS \"Class_TeacherId_seq\" START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;");
+            migrationBuilder.Sql("CREATE SEQUENCE IF NOT EXISTS \"Class_CourseId_seq\" START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;");
+            migrationBuilder.Sql("CREATE SEQUENCE IF NOT EXISTS \"ClassSessions_Id_seq\" START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;");
+            migrationBuilder.Sql("CREATE SEQUENCE IF NOT EXISTS \"ClassSessions_ClassId_seq\" START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;");
+            migrationBuilder.Sql("CREATE SEQUENCE IF NOT EXISTS \"ClassSessions_SessionTimeId_seq\" START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;");
+
             migrationBuilder.CreateTable(
                 name: "Courses",
                 columns: table => new
@@ -241,7 +247,6 @@ namespace ClassLibrary1University_Management_System.Infrastructure.Migrations
                 unique: true);
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
@@ -264,6 +269,9 @@ namespace ClassLibrary1University_Management_System.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "Roles");
+
+            // Drop the sequence when rolling back the migration
+            migrationBuilder.Sql("DROP SEQUENCE IF EXISTS \"Users_id_seq\";");
         }
     }
 }

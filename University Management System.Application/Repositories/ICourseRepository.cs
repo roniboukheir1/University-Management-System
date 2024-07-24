@@ -1,12 +1,13 @@
+using University_Management_System.Common.Repositories;
 using University_Management_System.Domain.Models;
 
 namespace University_Management_System.Persistence.Repositories;
 
-public interface ICourseRepository
+public interface ICourseRepository : IRepository<Course>
 {
-    public Course GetById(long id);
-    public IEnumerable<Course> GetAll();
-    public void Add(Course course);
-    public void Update(Course course);
-    public void Remove(long id);
+    public Task<Course> GetByIdAsync(long id);
+    public Task<IEnumerable<Course>> GetAllAsync();
+    public Task AddAsync(Course course);
+    public Task UpdateAsync(Course course);
+    public Task DeleteAsync(long id);
 }

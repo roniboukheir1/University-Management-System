@@ -7,9 +7,6 @@ namespace University_Management_System.Domain.Models;
 
 public partial class User
 {
-    public int Admin = 1;
-    public int Teacher = 2;
-    public int Student = 3;
     public long Id { get; set; }
 
     public string Name { get; set; } = null!;

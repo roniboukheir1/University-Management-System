@@ -1,68 +1,108 @@
-/*
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using University_Management_System.Common.Exceptions;
 using University_Management_System.Domain.Models;
 using Microsoft.Extensions.Caching.Memory;
+using University_Management_System.Common.Repositories;
+using University_Management_System.Infrastructure;
 
 namespace University_Management_System.Persistence.Repositories;
 
-public class TeacherRepository : ITeacherRepository
+public class TeacherRepository : Repository<Teacher>, ITeacherRepository
 {
-    private readonly PostgresContext _context;
-    private readonly IMemoryCache _cache;
-    private readonly ILogger<TeacherRepository> _logger;
 
-    public TeacherRepository(PostgresContext context, IMemoryCache cache, ILogger<TeacherRepository> logger)
+    private readonly UmsContext _context;
+    private readonly IMemoryCache _cache;
+    private readonly IClassRepository _classRepository;
+    private readonly string TeacherCacheKey = "TeacherCache";
+    private readonly string ClassCacheKey = "ClassCache";
+    private readonly string SessionCacheKey = "SessionCache";
+    public TeacherRepository(UmsContext context, IMemoryCache cache, IClassRepository clsRepo) : base(context, cache)
     {
-        _context = context ?? throw new ArgumentNullException(nameof(context));
-        _cache = cache ?? throw new ArgumentNullException(nameof(cache));
-        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        _context = context;
+        _cache = cache;
+        _classRepository = clsRepo;
     }
 
-    public void registerTeacher(TimeSlotModel model)
+    public async override Task<IEnumerable<Teacher>> GetAllAsync()
     {
-        if (model == null)
+        return await _context.Users
+            .Where(u => u.RoleId == Role.Teacher)
+            .Select(u => (Teacher) u).ToListAsync();
+    }
+
+    public async Task AddCourseAsync(Course course, long teacherId)
+    {
+        string cacheKey = $"{TeacherCacheKey}_{teacherId}_courses";
+        string courseCacheKey = $"{ClassCacheKey}_{course.CourseId}";
+        string teacherCacheKey = $"{TeacherCacheKey}_{teacherId}";
+        _cache.Remove(cacheKey);
+        Teacher teacher = _cache.Get<Teacher>(teacherCacheKey);
+        if (teacher == null)
+            teacher = await GetByIdAsync(teacherId);
+        
+        if (teacher == null)
         {
-            throw new ArgumentNullException(nameof(model));
+            throw new NotFoundException("Teacher Not Found");
         }
 
-        _logger.LogInformation("Registering course with TimeSlotModel: {@model}", model);
-
-        var course = _context.Courses.SingleOrDefault(c => c.Id == model.CourseId);
-        if (course == null)
+        Course item = _cache.Get<Course>(ClassCacheKey);
+        if(item == null)
+            item = await _context.Courses.FirstOrDefaultAsync(u => u.CourseId == course.CourseId);
+        if (item == null)
         {
-            _logger.LogWarning("Course not found: {CourseId}", model.CourseId);
-            throw new NotFoundException("Course not found");
+            throw new NotFoundException("Course Not Found");
         }
-
-        if (!TimeSpan.TryParse(model.StartTime, out var startTime))
+        var @class = new Class
         {
-            _logger.LogError("Invalid StartTime format: {StartTime}", model.StartTime);
-            throw new FormatException("Invalid StartTime format");
-        }
-
-        if (!TimeSpan.TryParse(model.EndTime, out var endTime))
-        {
-            _logger.LogError("Invalid EndTime format: {EndTime}", model.EndTime);
-            throw new FormatException("Invalid EndTime format");
-        }
-
-        var timeslot = new TimeSlotModel
-        {
-            DayPattern = model.DayPattern,
-            StartTime = startTime.ToString(),
-            EndTime = endTime.ToString(),
-            CourseId = model.CourseId,
+            TeacherId = teacherId,
+            CourseId = course.CourseId
         };
+        await _context.TeacherPerCourses.AddAsync(@class);
+        await _context.SaveChangesAsync();
+        
+        var courses = await _context.TeacherPerCourses
+            .Where(u=> u.TeacherId == teacherId)
+            .Select(u => u.Course)
+            .ToListAsync();
+        _cache.Set(cacheKey, courses, TimeSpan.FromMinutes(30));    
+    }
+    public async Task AddSessionAsync(long classId, SessionTime? sessionTime)
+    {
+        string CacheKey = $"{SessionCacheKey}_{classId}";
+        var @class = await _classRepository.GetByIdAsync(classId);
+        if (@class == null)
+        {
+            throw new NotFoundException("Class Not Found");
+        }
 
-        course.TimeSlots.Add(timeslot);
-        _context.Courses.Update(course);
-        _context.TimeSlots.Add(timeslot); // do we really need to save this in the database?
-        _context.SaveChanges();
-        _cache.Remove($"Course_{model.CourseId}");
-        _cache.Remove("AllCourses");
-        _cache.Remove("AllCoursesList");
-        _logger.LogInformation("Course registered with time slot successfully: {@timeSlot}", timeslot);
+        Session session = new Session
+        {
+            TeacherPerCourseId = classId,
+            SessionTimeId = sessionTime.Id
+        };
+        await _context.TeacherPerCoursePerSessionTimes.AddAsync(session);
+        await _context.SaveChangesAsync();
+        _cache.Set(CacheKey, session, TimeSpan.FromMinutes(30));
+    }
+    public async override Task<Teacher> GetByIdAsync(long teacherId)
+    {
+        string cacheKey = $"{TeacherCacheKey}_{teacherId}";
+        var teacher = _cache.Get<User>(cacheKey);
+        if (teacher == null)
+        {
+            teacher = await _context.Users.FirstOrDefaultAsync(u => u.Id == teacherId && u.RoleId == Role.Teacher);
+            if (teacher != null)
+            {
+                _cache.Set(cacheKey, teacher, TimeSpan.FromMinutes(30));
+            }
+        }
+        return (Teacher)teacher;
+    }
+
+    public UmsContext GetContext()
+    {
+        return _context;    
     }
 }
-*/

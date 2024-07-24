@@ -1,11 +1,14 @@
+using University_Management_System.Common.Repositories;
 using University_Management_System.Domain.Models;
+using University_Management_System.Infrastructure;
 
 namespace University_Management_System.Persistence.Repositories;
 
-public interface ITeacherRepository
+public interface ITeacherRepository : IRepository<Teacher>
 {
-    Task<Teacher> GetTeacherByIdAsync(long teacherId);
-    Task<IEnumerable<Teacher>> GetAllTeachersAsync();
-    Task AddCourseAsync(Course course);
-    Task UpdateTeacherAsync(Teacher teacher);
+    public Task<Teacher> GetByIdAsync(long teacherId);
+    public Task<IEnumerable<Teacher>> GetAllAsync();
+    public Task AddCourseAsync(Course course, long teacherId);
+    public Task AddSessionAsync(long classId, SessionTime? sessionTime);
+    public UmsContext GetContext();
 }

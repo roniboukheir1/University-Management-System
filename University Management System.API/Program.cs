@@ -7,6 +7,7 @@ using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
 using University_Management_System.Application.Handlers.StudentHandlers;
+using University_Management_System.Application.Handlers.TeacherHandlers;
 using University_Management_System.Common.Repositories;
 using University_Management_System.Persistence;
 using University_Management_System.Domain.Models;
@@ -66,18 +67,20 @@ builder.Services.AddDbContext<UmsContext>(options =>
 // Add Caching
 builder.Services.AddMemoryCache();
 
-// Add Services and Repositories
-builder.Services.AddScoped<IStudentRepository, StudentRepository>();
-builder.Services.AddScoped<IClassRepository, ClassRepository>();
-
 builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssemblies(
         typeof(Program).Assembly,
         typeof(AddEnrollmentCommandHandler).Assembly,
-        typeof(GetStudentByIdHandler).Assembly
+        typeof(GetStudentByIdHandler).Assembly,
+        typeof(AddSessionCommandHandler).Assembly
     );
 });
+// Add Services and Repositories
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
+builder.Services.AddScoped<IClassRepository, ClassRepository>();
+builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 
 builder.Services.AddSingleton<IFileProvider>(
     new PhysicalFileProvider(
