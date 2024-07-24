@@ -10,3 +10,6 @@ C:\Users\abukh\RiderProjects\University Management System\University Management 
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\refint\University Management System.Domain.dll
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\University Management System.Domain.pdb
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\ref\University Management System.Domain.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\bin\Debug\net8.0\University Management System.Domain.runtimeconfig.json
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\University Management System.Domain.csproj.AssemblyReference.cache
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\University Management System.Domain.genruntimeconfig.cache

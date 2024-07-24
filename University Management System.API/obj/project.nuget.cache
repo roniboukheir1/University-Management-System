@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "G7cD4ZB86Sru2Qi/nY34W+zLSk0b7mBTFc6x82cTCIowoC5Ch+siAcvFjqDus7A9SyGE35O8s+LYaIFDQ9awhA==",
+  "dgSpecHash": "VFcYSvFYb32KSTFFlkCcGEhbfI00IFh4Bbr/xdBUXSrVymMngdoMODMfxeSi0EafxWJDgSI61qA7A5k9uK5C6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.API\\University Management System.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abukh\\.nuget\\packages\\aspnetcore.cacheoutput\\3.1.0\\aspnetcore.cacheoutput.3.1.0.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\abukh\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\abukh\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.odata\\8.2.5\\microsoft.aspnetcore.odata.8.2.5.nupkg.sha512",

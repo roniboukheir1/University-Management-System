@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22801A07-99AE-4D58-9206-145EF54EFB77}|University Management System.Persistence\\University Management System.Persistence.csproj|c:\\users\\abukh\\riderprojects\\university management system\\university management system.persistence\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22801A07-99AE-4D58-9206-145EF54EFB77}|University Management System.Persistence\\University Management System.Persistence.csproj|solutionrelative:university management system.persistence\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9179DBED-D57D-4EE9-A94E-185A052273C4}|University Management System.API\\University Management System.API.csproj|c:\\users\\abukh\\riderprojects\\university management system\\university management system.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9179DBED-D57D-4EE9-A94E-185A052273C4}|University Management System.API\\University Management System.API.csproj|solutionrelative:university management system.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22801A07-99AE-4D58-9206-145EF54EFB77}|University Management System.Persistence\\University Management System.Persistence.csproj|c:\\users\\abukh\\riderprojects\\university management system\\university management system.persistence\\models\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22801A07-99AE-4D58-9206-145EF54EFB77}|University Management System.Persistence\\University Management System.Persistence.csproj|solutionrelative:university management system.persistence\\models\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9179DBED-D57D-4EE9-A94E-185A052273C4}|University Management System.API\\University Management System.API.csproj|c:\\users\\abukh\\riderprojects\\university management system\\university management system.api\\university management system.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9179DBED-D57D-4EE9-A94E-185A052273C4}|University Management System.API\\University Management System.API.csproj|solutionrelative:university management system.api\\university management system.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22801A07-99AE-4D58-9206-145EF54EFB77}|University Management System.Persistence\\University Management System.Persistence.csproj|c:\\users\\abukh\\riderprojects\\university management system\\university management system.persistence\\university management system.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{22801A07-99AE-4D58-9206-145EF54EFB77}|University Management System.Persistence\\University Management System.Persistence.csproj|solutionrelative:university management system.persistence\\university management system.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 326,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Persistence\\Repositories\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "University Management System.Persistence\\Repositories\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Persistence\\Repositories\\StudentRepository.cs",
+              "RelativeToolTip": "University Management System.Persistence\\Repositories\\StudentRepository.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAqwA4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T12:09:56.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PostgresContext.cs",
+              "DocumentMoniker": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Persistence\\Models\\PostgresContext.cs",
+              "RelativeDocumentMoniker": "University Management System.Persistence\\Models\\PostgresContext.cs",
+              "ToolTip": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Persistence\\Models\\PostgresContext.cs",
+              "RelativeToolTip": "University Management System.Persistence\\Models\\PostgresContext.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T12:09:42.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.API\\Program.cs",
+              "RelativeDocumentMoniker": "University Management System.API\\Program.cs",
+              "ToolTip": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.API\\Program.cs",
+              "RelativeToolTip": "University Management System.API\\Program.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAQwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T11:01:27.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "University Management System.API.csproj",
+              "DocumentMoniker": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.API\\University Management System.API.csproj",
+              "RelativeDocumentMoniker": "University Management System.API\\University Management System.API.csproj",
+              "ToolTip": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.API\\University Management System.API.csproj",
+              "RelativeToolTip": "University Management System.API\\University Management System.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-22T11:01:12.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "University Management System.Persistence.csproj",
+              "DocumentMoniker": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Persistence\\University Management System.Persistence.csproj",
+              "RelativeDocumentMoniker": "University Management System.Persistence\\University Management System.Persistence.csproj",
+              "ToolTip": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Persistence\\University Management System.Persistence.csproj",
+              "RelativeToolTip": "University Management System.Persistence\\University Management System.Persistence.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-22T11:00:57.75Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

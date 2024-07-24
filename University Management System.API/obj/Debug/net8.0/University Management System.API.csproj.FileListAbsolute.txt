@@ -110,3 +110,11 @@ C:\Users\abukh\RiderProjects\University Management System\University Management 
 C:\Users\abukh\RiderProjects\University Management System\University Management System.API\obj\Debug\net8.0\University Management System.API.pdb
 C:\Users\abukh\RiderProjects\University Management System\University Management System.API\obj\Debug\net8.0\University Management System.API.genruntimeconfig.cache
 C:\Users\abukh\RiderProjects\University Management System\University Management System.API\obj\Debug\net8.0\ref\University Management System.API.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\AspNetCore.CacheOutput.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.AspNetCore.OData.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.OData.Core.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.OData.Edm.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.OData.ModelBuilder.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.Spatial.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\University Management System.API.staticwebassets.runtime.json

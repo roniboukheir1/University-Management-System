@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="MediatR" Version="12.3.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7" />
@@ -17,7 +18,12 @@
     
     <ItemGroup>
       <ProjectReference Include="..\University Management System.Application\University Management System.Application.csproj" />
+      <ProjectReference Include="..\University Management System.Domain\University Management System.Domain.csproj" />
       <ProjectReference Include="..\University Management System.Persistence\University Management System.Persistence.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="wwwroot\profile_pictures\" />
     </ItemGroup>
 
 </Project>

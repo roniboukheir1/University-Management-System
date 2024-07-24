@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using University_Management_System.Common.Exceptions;
-using University_Management_System.Persistence.Models;
+using University_Management_System.Domain.Models;
 using University_Management_System.Persistence.Services;
 
 namespace University_Management_System.API.Controllers;
@@ -57,7 +57,7 @@ public class TeacherController : ControllerBase
         }
     }
 
-    [HttpPost("{studentId}/profile-picture")]
+    /*[HttpPost("{studentId}/profile-picture")]
     public IActionResult UploadProfilePicture(long studentId, [FromForm] IFormFile profilePicture)
     {
         try
@@ -69,7 +69,7 @@ public class TeacherController : ControllerBase
         {
            return StatusCode(500, $"Internal server error: {ex.Message}");
         }
-    }
+    }*/
     public class GradeRequest
     {
         public double Grade { get; set; }

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ynQh5SKAJKGuMiDwYlrktxpO5S2PHWKJfZf6X3WhQePWzOvmvqKMx4ERnmZwD1GX6DYqV4ksWOds8SlCetVmIw==",
+  "dgSpecHash": "Ozl9vsIwIoNYo1uzQ2G0xs21IXAB7JqnPn0YSbwG6RI5ILi2+kZpwAc5VfL1AZTsXvzIE3Hi0bgZrmrYx0c+xw==",
   "success": true,
   "projectFilePath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Application\\University Management System.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abukh\\.nuget\\packages\\aspnetcore.cacheoutput\\3.1.0\\aspnetcore.cacheoutput.3.1.0.nupkg.sha512",
+    "C:\\Users\\abukh\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\abukh\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.odata\\8.2.5\\microsoft.aspnetcore.odata.8.2.5.nupkg.sha512",

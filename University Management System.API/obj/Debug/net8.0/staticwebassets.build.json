@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "y1v0IPQtwxD9U3lF31AKbOyGVhVx8dqqnQi8uX4pr0g=",
+  "Hash": "2QtbuRQdbBAigpfiHajIGwUlaKCXnTFU7Me8MScm5xY=",
   "Source": "University Management System.API",
   "BasePath": "_content/University Management System.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "University Management System.API\\wwwroot",
+      "Source": "University Management System.API",
+      "ContentRoot": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.API\\wwwroot\\",
+      "BasePath": "_content/University Management System.API",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

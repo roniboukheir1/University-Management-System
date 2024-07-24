@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <PackageReference Include="AspNetCore.CacheOutput" Version="3.1.0" />
+      <PackageReference Include="MediatR" Version="12.3.0" />
       <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
       <PackageReference Include="Microsoft.AspNetCore.OData" Version="8.2.5" />

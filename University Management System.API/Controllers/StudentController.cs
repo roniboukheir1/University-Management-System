@@ -18,6 +18,7 @@ public class StudentController : ControllerBase
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
+    [HttpGet]
     public IActionResult Get()
     {
         return Ok(_studentService.GetAll());

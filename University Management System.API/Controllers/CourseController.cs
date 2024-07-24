@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
 using University_Management_System.Application.Commands;
 using University_Management_System.Common.Exceptions;
-using University_Management_System.Persistence.Models;
+using University_Management_System.Domain.Models;
 using University_Management_System.Persistence.Services;
 
 namespace University_Management_System.API.Controllers;
@@ -15,12 +15,12 @@ namespace University_Management_System.API.Controllers;
 public class CourseController : ControllerBase
 {
 
-    private readonly CourseService _courseService;
+            private readonly IMediator _mediator;
 
-    public CourseController(CourseService courseService)
-    {
-        _courseService = courseService;
-    }
+        public UsersController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
 
     [HttpPost("CreateCourse")]
     public IActionResult CreateCourse([FromBody] CreateCourseCommand command)

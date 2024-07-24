@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2/WU2EhGcxS3DQ45/3a3Yws+I+KvcDFslcyOElNe55zH7LKnRt44zWk/I71h9rCRa1tT+xUhlO4ONBGMLFOgGw==",
+  "dgSpecHash": "vrOGDAva1Vw8e3jdliQyTf+4qk4lGzabB54u6sjnyosRG8y9i18j8kwjdvcA93bYRDt7zseL+nN+maBfMUQdWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Persistence\\University Management System.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abukh\\.nuget\\packages\\aspnetcore.cacheoutput\\3.1.0\\aspnetcore.cacheoutput.3.1.0.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\abukh\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\abukh\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.odata\\8.2.5\\microsoft.aspnetcore.odata.8.2.5.nupkg.sha512",

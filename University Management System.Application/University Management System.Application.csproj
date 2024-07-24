@@ -8,7 +8,16 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\University Management System.Domain\University Management System.Domain.csproj" />
       <ProjectReference Include="..\University Management System.Persistence\University Management System.Persistence.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Queries\" />
     </ItemGroup>
 
 </Project>
