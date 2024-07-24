@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using University_Management_System.Domain.Models;
 
-namespace University_Management_System.Domain.Models;
+namespace University_Management_System.Infrastructure;
 
 public partial class UmsContext : DbContext
 {
@@ -108,7 +109,7 @@ public partial class UmsContext : DbContext
                 .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName("class_teacher_id_fk");
         });
-
+ 
         modelBuilder.Entity<Session>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("classsessions_pk");

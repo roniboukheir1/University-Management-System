@@ -118,3 +118,10 @@ C:\Users\abukh\RiderProjects\University Management System\University Management 
 C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.OData.ModelBuilder.dll
 C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.Spatial.dll
 C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\University Management System.API.staticwebassets.runtime.json
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\MediatR.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\University Management System.Domain.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\University Management System.Infrastructure.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\University Management System.Domain.pdb
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\University Management System.Infrastructure.pdb
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

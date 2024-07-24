@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+/*using Microsoft.AspNetCore.Mvc;
 using University_Management_System.Common.Exceptions;
 using University_Management_System.Domain.Models;
 using University_Management_System.Persistence.Services;
@@ -69,9 +69,9 @@ public class TeacherController : ControllerBase
         {
            return StatusCode(500, $"Internal server error: {ex.Message}");
         }
-    }*/
+    }#1#
     public class GradeRequest
     {
         public double Grade { get; set; }
     }
-}
+}*/

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Ozl9vsIwIoNYo1uzQ2G0xs21IXAB7JqnPn0YSbwG6RI5ILi2+kZpwAc5VfL1AZTsXvzIE3Hi0bgZrmrYx0c+xw==",
+  "dgSpecHash": "DHw3Wtfchkc+yDxsmFvg3o6gy9dj7phuVoRnuiNoyIOkvRGUIMG5qENL4C2+pf+dk7y4XDwEXfW59gRjZFS7Ig==",
   "success": true,
   "projectFilePath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Application\\University Management System.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abukh\\.nuget\\packages\\aspnetcore.cacheoutput\\3.1.0\\aspnetcore.cacheoutput.3.1.0.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\abukh\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\microsoft.aspnetcore.odata\\8.2.5\\microsoft.aspnetcore.odata.8.2.5.nupkg.sha512",
@@ -42,5 +43,16 @@
     "C:\\Users\\abukh\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\abukh\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.3.0 was resolved.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

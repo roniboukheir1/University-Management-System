@@ -1,3 +1,4 @@
+/*using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
@@ -15,12 +16,12 @@ namespace University_Management_System.API.Controllers;
 public class CourseController : ControllerBase
 {
 
-            private readonly IMediator _mediator;
+    private readonly IMediator _mediator;
 
-        public UsersController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
+    public CourseController(IMediator mediator)
+    {
+        _mediator = mediator;
+    }
 
     [HttpPost("CreateCourse")]
     public IActionResult CreateCourse([FromBody] CreateCourseCommand command)
@@ -80,4 +81,4 @@ public class CourseController : ControllerBase
         _courseService.DeleteCourse(id);
         return Ok();
     }
-}
+}*/

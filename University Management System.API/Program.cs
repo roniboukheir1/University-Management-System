@@ -6,10 +6,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
+using University_Management_System.Application.Handlers.StudentHandlers;
+using University_Management_System.Common.Repositories;
 using University_Management_System.Persistence;
 using University_Management_System.Domain.Models;
+using University_Management_System.Infrastructure;
 using University_Management_System.Persistence.Repositories;
-using University_Management_System.Persistence.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -65,14 +67,17 @@ builder.Services.AddDbContext<UmsContext>(options =>
 builder.Services.AddMemoryCache();
 
 // Add Services and Repositories
-builder.Services.AddScoped<CourseService>();
-builder.Services.AddScoped<StudentService>();
-builder.Services.AddScoped<TeacherServices>();
-builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
-builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
+builder.Services.AddScoped<IClassRepository, ClassRepository>();
 
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssemblies(
+        typeof(Program).Assembly,
+        typeof(AddEnrollmentCommandHandler).Assembly,
+        typeof(GetStudentByIdHandler).Assembly
+    );
+});
 
 builder.Services.AddSingleton<IFileProvider>(
     new PhysicalFileProvider(

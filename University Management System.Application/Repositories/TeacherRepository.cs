@@ -1,3 +1,4 @@
+/*
 using Microsoft.Extensions.Logging;
 using University_Management_System.Common.Exceptions;
 using University_Management_System.Domain.Models;
@@ -64,3 +65,4 @@ public class TeacherRepository : ITeacherRepository
         _logger.LogInformation("Course registered with time slot successfully: {@timeSlot}", timeslot);
     }
 }
+*/

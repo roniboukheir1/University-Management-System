@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using University_Management_System.Common.Exceptions;
-using University_Management_System.Domain.Models;
+using University_Management_System.Infrastructure;
 
 namespace University_Management_System.Common.Repositories;
 
@@ -13,12 +13,12 @@ public class Repository<T> : IRepository<T> where T: class
         _context = context;
     }
 
-    public async Task<IEnumerable<T>> GetAllAsync()
+    public virtual async Task<IEnumerable<T>> GetAllAsync()
     {
         return await _context.Set<T>().ToListAsync();
     }
 
-    public async Task<T> GetByIdAsync(long id)
+    public virtual async Task<T> GetByIdAsync(long id)
     {
         return await _context.Set<T>().FindAsync(id);
     }

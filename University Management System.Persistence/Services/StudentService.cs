@@ -1,3 +1,4 @@
+/*
 using Microsoft.Extensions.Logging;
 using University_Management_System.Common.Exceptions;
 using University_Management_System.Domain.Models;
@@ -61,3 +62,4 @@ public class StudentService
         return _studentRepository.GetAll();
     }
 }
+*/

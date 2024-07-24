@@ -1,4 +1,4 @@
-using University_Management_System.Application.Commands;
+/*using University_Management_System.Application.Commands;
 using University_Management_System.Common.Exceptions;
 using University_Management_System.Domain.Models;
 using University_Management_System.Persistence.Repositories;
@@ -75,4 +75,4 @@ public class CourseService
         _courseRepo.Remove(id);
     }
 
-}
+}*/

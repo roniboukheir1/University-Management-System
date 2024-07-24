@@ -14,10 +14,7 @@
 
     <ItemGroup>
       <PackageReference Include="MediatR" Version="12.3.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Queries\" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     </ItemGroup>
 
 </Project>

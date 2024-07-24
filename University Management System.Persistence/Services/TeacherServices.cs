@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Hosting;
+/*using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using University_Management_System.Common.Exceptions;
@@ -73,5 +73,5 @@ public class TeacherServices
         }
         student.ProfilePicture = fileName;
         _studentRepository.UpdateStudent(student);
-    }*/
-}
+    }#1#
+}*/

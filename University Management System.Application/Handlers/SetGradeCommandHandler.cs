@@ -1,4 +1,4 @@
-using MediatR;
+/*using MediatR;
 using University_Management_System.Application.Commands;
 using University_Management_System.Common.Exceptions;
 using University_Management_System.Persistence.Repositories;
@@ -34,4 +34,4 @@ public class SetGradeCommandHandler : IRequestHandler<SetGradeCommand>
         await _studentRepo.Update(student);
 
     }
-}
+}*/

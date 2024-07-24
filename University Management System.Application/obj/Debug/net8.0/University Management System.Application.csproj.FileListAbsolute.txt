@@ -16,3 +16,7 @@ C:\Users\abukh\RiderProjects\University Management System\University Management 
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Application\obj\Debug\net8.0\refint\University Management System.Application.dll
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Application\obj\Debug\net8.0\University Management System.Application.pdb
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Application\obj\Debug\net8.0\ref\University Management System.Application.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Application\bin\Debug\net8.0\University Management System.Domain.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Application\bin\Debug\net8.0\University Management System.Infrastructure.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Application\bin\Debug\net8.0\University Management System.Domain.pdb
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Application\bin\Debug\net8.0\University Management System.Infrastructure.pdb
