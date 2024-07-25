@@ -199,8 +199,8 @@ namespace ClassLibrary1University_Management_System.Infrastructure.Migrations
                     b.Property<long>("CourseId")
                         .HasColumnType("bigint");
 
-                    b.Property<decimal>("Grade")
-                        .HasColumnType("numeric");
+                    b.Property<double>("Grade")
+                        .HasColumnType("double precision");
 
                     b.Property<long>("StudentId")
                         .HasColumnType("bigint");

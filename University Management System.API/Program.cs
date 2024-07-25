@@ -1,23 +1,70 @@
-using System.Reflection;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.OData;
-using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
+using Serilog;
+using Serilog.Events;
+using Serilog.Sinks.PostgreSQL;
+using System.Globalization;
+using ClassLibrary1University_Management_System.Infrastructure.Services;
+using Hangfire;
+using Hangfire.Console;
+using Hangfire.PostgreSql;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.AspNetCore.OData;
+using NpgsqlTypes;
 using University_Management_System.Application.Handlers.StudentHandlers;
 using University_Management_System.Application.Handlers.TeacherHandlers;
 using University_Management_System.Common.Repositories;
-using University_Management_System.Persistence;
 using University_Management_System.Domain.Models;
 using University_Management_System.Infrastructure;
+using University_Management_System.Persistence;
 using University_Management_System.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.PostgreSQL(builder.Configuration.GetConnectionString("DefaultConnection"), "Logs",
+        needAutoCreateTable: true,
+        columnOptions: new Dictionary<string, ColumnWriterBase>
+        {
+            {"Message", new RenderedMessageColumnWriter(NpgsqlDbType.Text)},
+            {"MessageTemplate", new MessageTemplateColumnWriter(NpgsqlDbType.Text)},
+            {"Level", new LevelColumnWriter(true, NpgsqlDbType.Varchar)},
+            {"TimeStamp", new TimestampColumnWriter(NpgsqlDbType.Timestamp)},
+            {"Exception", new ExceptionColumnWriter(NpgsqlDbType.Text)},
+            {"LogEvent", new LogEventSerializedColumnWriter(NpgsqlDbType.Jsonb)}
+        })
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+var supportedCultures = new[]
+{
+    new CultureInfo("en"),
+    new CultureInfo("ar"),
+    new CultureInfo("fr"),
+};
+
 // Load API versioning settings from configuration
 var apiVersioningSettings = builder.Configuration.GetSection("ApiVersioning");
+
+var smtpServer = "mail.smtp2go.com";
+var smtpPort = 2525;
+var smtpUser = "Roni";
+var smtpPass = "B019771AA229464981195D71B1CBA057";
 
 builder.Services.AddControllers()
     .AddOData(options => options.Select().Expand().Filter().OrderBy().Count().SetMaxTop(100));
@@ -67,6 +114,25 @@ builder.Services.AddDbContext<UmsContext>(options =>
 // Add Caching
 builder.Services.AddMemoryCache();
 
+builder.Services.AddHealthChecks()
+    .AddNpgSql(
+        connectionString: "Host=localhost;Database=postgres;Username=postgres;Password=mysequel1!",
+        healthQuery: "Select 1",
+        name: "DB Check",
+        failureStatus: HealthStatus.Unhealthy,
+        tags: new[] { "sql", "npglsql", "healthchecks" })
+    .AddCheck<ChuckNorrisHealthCheck>("Chuch Norris API");
+
+builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
+builder.Services.AddTransient<IEmailService, EmailService>();
+builder.Services.AddHangfire(config =>
+{
+    config.UsePostgreSqlStorage(builder.Configuration.GetConnectionString("DefaultConnection"));
+    config.UseConsole();
+});
+builder.Services.AddHangfireServer();
+builder.Services.AddSingleton<ScheduleJobs>();
+
 builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssemblies(
@@ -76,6 +142,7 @@ builder.Services.AddMediatR(cfg =>
         typeof(AddSessionCommandHandler).Assembly
     );
 });
+
 // Add Services and Repositories
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
@@ -88,7 +155,7 @@ builder.Services.AddSingleton<IFileProvider>(
 
 var app = builder.Build();
 
-
+app.MapHealthChecks("/health", new HealthCheckOptions());
 
 if (app.Environment.IsDevelopment())
 {
@@ -96,8 +163,34 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Configure localization
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("en"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures,
+    RequestCultureProviders = new List<IRequestCultureProvider>
+    {
+        new AcceptLanguageHeaderRequestCultureProvider()
+    }
+};
+
+app.UseRequestLocalization(localizationOptions);
+
+app.UseRouting();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthorization();
 app.MapControllers();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+    endpoints.MapHangfireDashboard();
+});
+
+var scheduleJobs = app.Services.GetRequiredService<ScheduleJobs>();
+scheduleJobs.Schedule();
+
 app.Run();

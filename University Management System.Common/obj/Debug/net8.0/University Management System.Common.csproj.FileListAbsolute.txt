@@ -16,3 +16,5 @@ C:\Users\abukh\RiderProjects\University Management System\University Management 
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Common\bin\Debug\net8.0\University Management System.Infrastructure.pdb
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Common\obj\Debug\net8.0\University Management System.Common.csproj.AssemblyReference.cache
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Common\obj\Debug\net8.0\Universi.3B2B4BB7.Up2Date
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Common\bin\Debug\net8.0\ar\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Common\bin\Debug\net8.0\en\University Management System.Domain.resources.dll

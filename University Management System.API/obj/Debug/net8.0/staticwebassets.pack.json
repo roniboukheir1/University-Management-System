@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.API\\wwwroot\\profile_pictures\\wwwroot\\profile_pictures\\3_WhatsApp Image 2023-10-04 at 18.28.30_5b095c73.jpg",
+      "PackagePath": "staticwebassets\\profile_pictures\\wwwroot\\profile_pictures\\3_WhatsApp Image 2023-10-04 at 18.28.30_5b095c73.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.University Management System.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.University Management System.API.props",
+      "PackagePath": "build\\University Management System.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.University Management System.API.props",
+      "PackagePath": "buildMultiTargeting\\University Management System.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.University Management System.API.props",
+      "PackagePath": "buildTransitive\\University Management System.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

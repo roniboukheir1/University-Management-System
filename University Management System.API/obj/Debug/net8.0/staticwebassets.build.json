@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2QtbuRQdbBAigpfiHajIGwUlaKCXnTFU7Me8MScm5xY=",
+  "Hash": "e2YYJ1OFrMpLre45ctZ28VFseXRPSPkVvdLHIBjfezA=",
   "Source": "University Management System.API",
   "BasePath": "_content/University Management System.API",
   "Mode": "Default",
@@ -15,5 +15,25 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.API\\wwwroot\\profile_pictures\\wwwroot\\profile_pictures\\3_WhatsApp Image 2023-10-04 at 18.28.30_5b095c73.jpg",
+      "SourceId": "University Management System.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.API\\wwwroot\\",
+      "BasePath": "_content/University Management System.API",
+      "RelativePath": "profile_pictures/wwwroot/profile_pictures/3_WhatsApp Image 2023-10-04 at 18.28.30_5b095c73.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\profile_pictures\\wwwroot\\profile_pictures\\3_WhatsApp Image 2023-10-04 at 18.28.30_5b095c73.jpg"
+    }
+  ]
 }

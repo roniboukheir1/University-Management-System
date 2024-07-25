@@ -1,0 +1,124 @@
+2024-07-25 01:16:09.441 +03:00 [INF] Start installing Hangfire SQL objects...
+2024-07-25 01:16:09.724 +03:00 [INF] Hangfire SQL objects installed.
+2024-07-25 01:16:10.240 +03:00 [INF] Now listening on: https://localhost:7170
+2024-07-25 01:16:10.242 +03:00 [INF] Now listening on: http://localhost:5279
+2024-07-25 01:16:10.253 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: postgres, Schema: hangfire'
+2024-07-25 01:16:10.255 +03:00 [INF] Using the following options for PostgreSQL job storage:
+2024-07-25 01:16:10.257 +03:00 [INF]     Queue poll interval: 00:00:15.
+2024-07-25 01:16:10.260 +03:00 [INF]     Invisibility timeout: 00:30:00.
+2024-07-25 01:16:10.261 +03:00 [INF]     Use sliding invisibility timeout: False.
+2024-07-25 01:16:10.262 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-07-25 01:16:10.285 +03:00 [DBG] Execution loop BackgroundServerProcess:fa0dcfeb has started in 7.4191 ms
+2024-07-25 01:16:10.291 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-25 01:16:10.292 +03:00 [INF] Hosting environment: Development
+2024-07-25 01:16:10.294 +03:00 [INF] Content root path: C:\Users\abukh\RiderProjects\University Management System\University Management System.API
+2024-07-25 01:16:10.324 +03:00 [INF] Server laptop15-dw3xxx:45372:e3cdf041 successfully announced in 30.3259 ms
+2024-07-25 01:16:10.329 +03:00 [DBG] Execution loop ServerHeartbeatProcess:02f0937a has started in 2.4941 ms
+2024-07-25 01:16:10.331 +03:00 [INF] Server laptop15-dw3xxx:45372:e3cdf041 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-07-25 01:16:10.333 +03:00 [DBG] Execution loop ServerWatchdog:a04021eb has started in 0.8081 ms
+2024-07-25 01:16:10.334 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:40fa305e has started in 0.5608 ms
+2024-07-25 01:16:10.335 +03:00 [DBG] Execution loop ExpirationManager:5aa8e62e has started in 0.5011 ms
+2024-07-25 01:16:10.336 +03:00 [DBG] Execution loop CountersAggregator:ab169e7c has started in 0.3172 ms
+2024-07-25 01:16:10.336 +03:00 [DBG] Execution loop Worker:bb1973e2 has started in 0.7232 ms
+2024-07-25 01:16:10.336 +03:00 [DBG] Execution loop Worker:33a59c7f has started in 0.9164 ms
+2024-07-25 01:16:10.340 +03:00 [DBG] Execution loop Worker:d2d1fce1 has started in 4.0288 ms
+2024-07-25 01:16:10.340 +03:00 [DBG] Execution loop Worker:67846be1 has started in 4.8999 ms
+2024-07-25 01:16:10.342 +03:00 [DBG] Execution loop Worker:aa759d75 has started in 6.5384 ms
+2024-07-25 01:16:10.343 +03:00 [DBG] Execution loop Worker:d8a3db57 has started in 7.1219 ms
+2024-07-25 01:16:10.343 +03:00 [DBG] Execution loop Worker:b9e1fb24 has started in 7.3702 ms
+2024-07-25 01:16:10.343 +03:00 [DBG] Execution loop Worker:704612f7 has started in 7.8175 ms
+2024-07-25 01:16:10.344 +03:00 [DBG] Execution loop Worker:41c343aa has started in 8.1652 ms
+2024-07-25 01:16:10.344 +03:00 [DBG] Execution loop Worker:13f8fe1e has started in 8.3595 ms
+2024-07-25 01:16:10.344 +03:00 [DBG] Execution loop Worker:f999f72a has started in 8.6127 ms
+2024-07-25 01:16:10.345 +03:00 [DBG] Execution loop Worker:78c17c17 has started in 8.953 ms
+2024-07-25 01:16:10.345 +03:00 [DBG] Execution loop Worker:34da3d93 has started in 9.2542 ms
+2024-07-25 01:16:10.345 +03:00 [DBG] Execution loop Worker:c74456a5 has started in 9.661 ms
+2024-07-25 01:16:10.346 +03:00 [DBG] Execution loop Worker:00bfd723 has started in 10.1274 ms
+2024-07-25 01:16:10.346 +03:00 [DBG] Removing outdated records from table 'aggregatedcounter'...
+2024-07-25 01:16:10.346 +03:00 [DBG] Execution loop Worker:6b6b19c5 has started in 10.5145 ms
+2024-07-25 01:16:10.346 +03:00 [DBG] Execution loop Worker:a6276a9c has started in 10.7926 ms
+2024-07-25 01:16:10.347 +03:00 [DBG] Execution loop Worker:e2636605 has started in 11.0429 ms
+2024-07-25 01:16:10.347 +03:00 [DBG] Execution loop Worker:18be9f7e has started in 11.4459 ms
+2024-07-25 01:16:10.347 +03:00 [DBG] Execution loop Worker:1ee6d1c6 has started in 11.8147 ms
+2024-07-25 01:16:10.347 +03:00 [DBG] Aggregating records in 'Counter' table...
+2024-07-25 01:16:10.348 +03:00 [DBG] Execution loop DelayedJobScheduler:137431b7 has started in 0.6166 ms
+2024-07-25 01:16:10.349 +03:00 [DBG] Execution loop RecurringJobScheduler:0f67d741 has started in 0.4701 ms
+2024-07-25 01:16:10.349 +03:00 [INF] Server laptop15-dw3xxx:45372:e3cdf041 all the dispatchers started
+2024-07-25 01:16:10.658 +03:00 [DBG] Removing outdated records from table 'counter'...
+2024-07-25 01:16:10.679 +03:00 [DBG] Removing outdated records from table 'job'...
+2024-07-25 01:16:10.695 +03:00 [DBG] Removing outdated records from table 'list'...
+2024-07-25 01:16:10.709 +03:00 [DBG] Removing outdated records from table 'set'...
+2024-07-25 01:16:10.723 +03:00 [DBG] Removing outdated records from table 'hash'...
+2024-07-25 01:16:11.025 +03:00 [DBG] 1 scheduled job(s) processed by scheduler.
+2024-07-25 01:16:11.900 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/swagger/index.html - null null
+2024-07-25 01:16:12.741 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/swagger/index.html - 200 null text/html;charset=utf-8 857.4591ms
+2024-07-25 01:16:16.802 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/swagger/v1/swagger.json - null null
+2024-07-25 01:16:17.103 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 302.1936ms
+2024-07-25 01:16:22.522 +03:00 [WRN] Failed to process the job '1': an exception occurred. Retry attempt 7 of 10 will be performed in 00:25:07.
+System.Net.Mail.SmtpFailedRecipientException: Mailbox unavailable. The server response was: relay access denied - please authenticate
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\Services\EmailService.cs:line 47
+   at EmailNotificationJob.SendEmailNotificationAsync(String to, String subject, String body) in C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\Services\EmailNotificationJob.cs:line 12
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2024-07-25 01:16:31.379 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7170/api/v1/User/3/uploadProfilePicture - multipart/form-data; boundary=----WebKitFormBoundaryBB1lkqH8255WB75o 168609
+2024-07-25 01:16:31.464 +03:00 [INF] Executing endpoint 'University_Management_System.API.Controllers.UserController.UploadProfilePicture (University Management System.API)'
+2024-07-25 01:16:31.516 +03:00 [INF] Route matched with {action = "UploadProfilePicture", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadProfilePicture(Int64, Microsoft.AspNetCore.Http.IFormFile) on controller University_Management_System.API.Controllers.UserController (University Management System.API).
+2024-07-25 01:16:31.916 +03:00 [INF] Executing action method University_Management_System.API.Controllers.UserController.UploadProfilePicture (University Management System.API) - Validation state: "Valid"
+2024-07-25 01:16:34.515 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Email", u."Name", u."ProfilePicture", u."RoleId", s."AverageGrade", s."CanApplyToFrance", CASE
+    WHEN s."Id" IS NOT NULL THEN 'Student'
+END AS "Discriminator"
+FROM "Users" AS u
+LEFT JOIN "Students" AS s ON u."Id" = s."Id"
+WHERE u."Id" = @__p_0
+LIMIT 1
+2024-07-25 01:16:34.694 +03:00 [INF] Profile picture for user 3 uploaded successfully. FilePath: C:\Users\abukh\RiderProjects\University Management System\University Management System.API\wwwroot\profile_pictures\wwwroot\profile_pictures\3_WhatsApp Image 2023-10-04 at 18.28.30_5b095c73.jpg
+2024-07-25 01:16:34.703 +03:00 [INF] Executed action method University_Management_System.API.Controllers.UserController.UploadProfilePicture (University Management System.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2780.7548ms.
+2024-07-25 01:16:34.724 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-25 01:16:34.801 +03:00 [INF] Executed action University_Management_System.API.Controllers.UserController.UploadProfilePicture (University Management System.API) in 3273.3712ms
+2024-07-25 01:16:34.804 +03:00 [INF] Executed endpoint 'University_Management_System.API.Controllers.UserController.UploadProfilePicture (University Management System.API)'
+2024-07-25 01:16:34.860 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7170/api/v1/User/3/uploadProfilePicture - 200 null application/json; charset=utf-8 3481.0083ms
+2024-07-25 01:16:40.330 +03:00 [DBG] Server laptop15-dw3xxx:45372:e3cdf041 heartbeat successfully sent
+2024-07-25 01:17:10.345 +03:00 [DBG] Server laptop15-dw3xxx:45372:e3cdf041 heartbeat successfully sent
+2024-07-25 01:17:22.301 +03:00 [DBG] Hangfire Server is stopping...
+2024-07-25 01:17:22.302 +03:00 [INF] Server laptop15-dw3xxx:45372:e3cdf041 caught stopping signal...
+2024-07-25 01:17:22.304 +03:00 [INF] Application is shutting down...
+2024-07-25 01:17:22.304 +03:00 [DBG] Execution loop ServerJobCancellationWatcher:40fa305e stopped in 0.8754 ms
+2024-07-25 01:17:22.304 +03:00 [DBG] Execution loop Worker:f999f72a stopped in 0.848 ms
+2024-07-25 01:17:22.304 +03:00 [DBG] Execution loop Worker:1ee6d1c6 stopped in 0.8479 ms
+2024-07-25 01:17:22.304 +03:00 [DBG] Execution loop Worker:78c17c17 stopped in 0.9007 ms
+2024-07-25 01:17:22.304 +03:00 [DBG] Execution loop CountersAggregator:ab169e7c stopped in 0.9505 ms
+2024-07-25 01:17:22.304 +03:00 [DBG] Execution loop Worker:00bfd723 stopped in 0.9998 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:41c343aa stopped in 1.0411 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:18be9f7e stopped in 1.0769 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:704612f7 stopped in 1.0846 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:e2636605 stopped in 1.2416 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:c74456a5 stopped in 1.3226 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:a6276a9c stopped in 1.5537 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:67846be1 stopped in 1.5934 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:aa759d75 stopped in 1.6776 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:d8a3db57 stopped in 1.6876 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop ServerWatchdog:a04021eb stopped in 1.7472 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop RecurringJobScheduler:0f67d741 stopped in 1.8805 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop DelayedJobScheduler:137431b7 stopped in 1.883 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:b9e1fb24 stopped in 1.9131 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:34da3d93 stopped in 1.9598 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:d2d1fce1 stopped in 1.9675 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop ExpirationManager:5aa8e62e stopped in 2.0148 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:6b6b19c5 stopped in 2.0188 ms
+2024-07-25 01:17:22.305 +03:00 [DBG] Execution loop Worker:13f8fe1e stopped in 2.0215 ms
+2024-07-25 01:17:22.306 +03:00 [DBG] Execution loop Worker:33a59c7f stopped in 2.0979 ms
+2024-07-25 01:17:22.306 +03:00 [DBG] Execution loop Worker:bb1973e2 stopped in 2.1029 ms
+2024-07-25 01:17:22.318 +03:00 [DBG] Hangfire Server is stopping...
+2024-07-25 01:17:22.348 +03:00 [INF] Server laptop15-dw3xxx:45372:e3cdf041 All dispatchers stopped
+2024-07-25 01:17:22.353 +03:00 [DBG] Execution loop ServerHeartbeatProcess:02f0937a stopped in 0.1432 ms
+2024-07-25 01:17:22.361 +03:00 [INF] Server laptop15-dw3xxx:45372:e3cdf041 successfully reported itself as stopped in 2.8093 ms
+2024-07-25 01:17:22.363 +03:00 [INF] Server laptop15-dw3xxx:45372:e3cdf041 has been stopped in total 59.4085 ms
+2024-07-25 01:17:22.364 +03:00 [DBG] Execution loop BackgroundServerProcess:fa0dcfeb stopped in 60.428 ms

@@ -20,3 +20,5 @@ C:\Users\abukh\RiderProjects\University Management System\University Management 
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\University Management System.Infrastructure.dll
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\University Management System.Domain.pdb
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\University Management System.Infrastructure.pdb
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\ar\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Persistence\bin\Debug\net8.0\en\University Management System.Domain.resources.dll

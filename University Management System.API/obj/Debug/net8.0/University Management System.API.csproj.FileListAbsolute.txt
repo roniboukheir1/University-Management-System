@@ -125,3 +125,36 @@ C:\Users\abukh\RiderProjects\University Management System\University Management 
 C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\University Management System.Domain.pdb
 C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\University Management System.Infrastructure.pdb
 C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\HealthChecks.NpgSql.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\HealthChecks.Uris.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\RestSharp.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Dapper.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Hangfire.AspNet.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Hangfire.AspNetCore.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Hangfire.Console.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Hangfire.Core.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Hangfire.NetCore.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Hangfire.PostgreSql.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Hangfire.SqlServer.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.Owin.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Owin.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\ar\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\en\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.API\bin\Debug\net8.0\Serilog.Sinks.PostgreSQL.dll

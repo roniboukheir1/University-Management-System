@@ -1,0 +1,20 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\wwwroot\profile_pictures\3_WhatsApp Image 2023-10-04 at 18.28.30_5b095c73.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>University Management System.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/University Management System.API</BasePath>
+      <RelativePath>profile_pictures/wwwroot/profile_pictures/3_WhatsApp Image 2023-10-04 at 18.28.30_5b095c73.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\wwwroot\profile_pictures\3_WhatsApp Image 2023-10-04 at 18.28.30_5b095c73.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

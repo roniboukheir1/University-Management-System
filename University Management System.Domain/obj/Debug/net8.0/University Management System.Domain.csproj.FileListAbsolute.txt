@@ -13,3 +13,13 @@ C:\Users\abukh\RiderProjects\University Management System\University Management 
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\bin\Debug\net8.0\University Management System.Domain.runtimeconfig.json
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\University Management System.Domain.csproj.AssemblyReference.cache
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\University Management System.Domain.genruntimeconfig.cache
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\bin\Debug\net8.0\ar\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\bin\Debug\net8.0\en\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\University_Management_System.Domain.Resources.Controllers.LocalizationController.rf.resources
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\University_Management_System.Domain.Resources.Controllers.LocalizationController.ar.resources
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\University_Management_System.Domain.Resources.Controllers.LocalizationController.en.resources
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\University Management System.Domain.csproj.GenerateResource.cache
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\ar\University Management System.Domain.resources.cs
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\ar\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\en\University Management System.Domain.resources.cs
+C:\Users\abukh\RiderProjects\University Management System\University Management System.Domain\obj\Debug\net8.0\en\University Management System.Domain.resources.dll

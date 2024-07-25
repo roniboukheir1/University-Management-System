@@ -8,7 +8,8 @@ using University_Management_System.Domain.Models;
 namespace University_Management_System.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     public class CourseController : ControllerBase
     {
         private readonly IMediator _mediator;
