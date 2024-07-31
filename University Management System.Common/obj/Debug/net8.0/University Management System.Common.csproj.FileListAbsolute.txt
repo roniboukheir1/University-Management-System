@@ -18,3 +18,23 @@ C:\Users\abukh\RiderProjects\University Management System\University Management 
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Common\obj\Debug\net8.0\Universi.3B2B4BB7.Up2Date
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Common\bin\Debug\net8.0\ar\University Management System.Domain.resources.dll
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Common\bin\Debug\net8.0\en\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\bin\Debug\net8.0\University Management System.Common.deps.json
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\bin\Debug\net8.0\University Management System.Common.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\bin\Debug\net8.0\University Management System.Common.pdb
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\bin\Debug\net8.0\University Management System.Domain.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\bin\Debug\net8.0\University Management System.Infrastructure.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\bin\Debug\net8.0\University Management System.Domain.pdb
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\bin\Debug\net8.0\University Management System.Infrastructure.pdb
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\bin\Debug\net8.0\ar\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\bin\Debug\net8.0\en\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\University Management System.Common.csproj.AssemblyReference.cache
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\University Management System.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\University Management System.Common.AssemblyInfoInputs.cache
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\University Management System.Common.AssemblyInfo.cs
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\University Management System.Common.csproj.CoreCompileInputs.cache
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\University Management System.Common.sourcelink.json
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\Universi.3B2B4BB7.Up2Date
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\University Management System.Common.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\refint\University Management System.Common.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\University Management System.Common.pdb
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Common\obj\Debug\net8.0\ref\University Management System.Common.dll

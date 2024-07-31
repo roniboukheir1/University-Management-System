@@ -2,7 +2,7 @@ using MediatR;
 using University_Management_System.Application.Commands.StudentCommand;
 using University_Management_System.Common.Exceptions;
 using University_Management_System.Domain.Models;
-using University_Management_System.Persistence.Repositories;
+using University_Management_System.Application.Repositories;
 
 namespace University_Management_System.Application.Handlers.StudentHandlers;
 

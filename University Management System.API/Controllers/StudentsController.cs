@@ -1,4 +1,5 @@
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using University_Management_System.Application.Commands.StudentCommand;
 using University_Management_System.Application.Handlers.StudentHandlers;
@@ -10,22 +11,24 @@ namespace University_Management_System.API.Controllers;
 [ApiController]
 [Route("api/[controller]")]
 [ApiVersion("1.0")]
-public class StudentController : ControllerBase
+public class StudentsController : ControllerBase
 {
    private readonly IMediator _mediator;
-   public StudentController(IMediator mediator)
+   public StudentsController(IMediator mediator)
    {
       _mediator = mediator;
    }
 
    [HttpPost("Enroll")]
+   [Authorize(Roles = "Admin,Student,Teacher")]
    public async Task<IActionResult> AddEnrollment([FromQuery] AddEnrollmentCommand command)
    {
       await _mediator.Send(command);
       return Ok();
    }
 
-   [HttpGet("students/{id}")]
+   [HttpGet("{id}")]
+   [Authorize(Roles = "Admin,Teacher")]
    public async Task<IActionResult> GetById(long id)
    {
       var query = new GetStudentByIdQuery(id);
@@ -38,7 +41,10 @@ public class StudentController : ControllerBase
       return Ok(student);
    }
 
-   [HttpGet("students")]
+    
+   [HttpGet()]
+   [Authorize]
+   [Authorize(Roles = "Admin,Teacher")]
    public async Task<IActionResult> GetAll()
    {
       var query = new GetAllStudentsQuery();
@@ -46,6 +52,7 @@ public class StudentController : ControllerBase
    }
 
    [HttpPost("AddStudent")]
+   [Authorize(Roles = "Admin,Teacher")]
    public async Task<IActionResult> AddStudent([FromBody] AddStudentCommand command)
    {
       var studentId = await _mediator.Send(command);

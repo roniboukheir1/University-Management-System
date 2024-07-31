@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using University_Management_System.Application.Commands.StudentCommand;
 using University_Management_System.Domain.Models;
 using University_Management_System.Infrastructure;
-using University_Management_System.Persistence;
 
 
 public class AddStudentCommandHandler : IRequestHandler<AddStudentCommand, long>

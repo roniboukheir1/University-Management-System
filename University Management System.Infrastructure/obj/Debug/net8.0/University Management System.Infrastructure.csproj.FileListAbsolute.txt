@@ -18,3 +18,23 @@ C:\Users\abukh\RiderProjects\University Management System\University Management 
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.genruntimeconfig.cache
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\ar\University Management System.Domain.resources.dll
 C:\Users\abukh\RiderProjects\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\en\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\University Management System.Infrastructure.deps.json
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\University Management System.Infrastructure.runtimeconfig.json
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\University Management System.Infrastructure.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\University Management System.Infrastructure.pdb
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\University Management System.Domain.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\University Management System.Domain.pdb
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\ar\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\bin\Debug\net8.0\en\University Management System.Domain.resources.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.AssemblyInfo.cs
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.sourcelink.json
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\Universi.206AC5C3.Up2Date
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\refint\University Management System.Infrastructure.dll
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.pdb
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\University Management System.Infrastructure.genruntimeconfig.cache
+C:\Users\abukh\RiderProjects\InmindBackend-Track\University Management System\University Management System.Infrastructure\obj\Debug\net8.0\ref\University Management System.Infrastructure.dll

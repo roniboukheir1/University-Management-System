@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System.IO;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using University_Management_System.Persistence;
 using Microsoft.Extensions.FileProviders;
 using University_Management_System.Infrastructure;
@@ -26,6 +27,7 @@ namespace University_Management_System.API.Controllers
         }
 
         [HttpPost("{id}/uploadProfilePicture")]
+        [Authorize(Roles = "Admin,Student,Teacher")]
         public async Task<IActionResult> UploadProfilePicture(long id, IFormFile file)
         {
             if (file == null || file.Length == 0)

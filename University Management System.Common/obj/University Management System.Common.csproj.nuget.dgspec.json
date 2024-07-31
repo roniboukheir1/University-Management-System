@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Common\\University Management System.Common.csproj": {}
+    "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Common\\University Management System.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Common\\University Management System.Common.csproj": {
+    "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Common\\University Management System.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Common\\University Management System.Common.csproj",
+        "projectUniqueName": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Common\\University Management System.Common.csproj",
         "projectName": "University Management System.Common",
-        "projectPath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Common\\University Management System.Common.csproj",
+        "projectPath": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Common\\University Management System.Common.csproj",
         "packagesPath": "C:\\Users\\abukh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Common\\obj\\",
+        "outputPath": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abukh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj": {
-                "projectPath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj"
+              "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj": {
+                "projectPath": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj"
               },
-              "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Infrastructure\\University Management System.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Infrastructure\\University Management System.Infrastructure.csproj"
+              "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Infrastructure\\University Management System.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Infrastructure\\University Management System.Infrastructure.csproj"
               }
             }
           }
@@ -50,6 +50,10 @@
             "AspNetCore.HealthChecks.Npgsql": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.21.1, )"
             },
             "Hangfire": {
               "target": "Package",
@@ -74,6 +78,10 @@
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
             },
             "Microsoft.Extensions.Localization": {
               "target": "Package",
@@ -112,14 +120,14 @@
         }
       }
     },
-    "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj": {
+    "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj",
         "projectName": "University Management System.Domain",
-        "projectPath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj",
+        "projectPath": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj",
         "packagesPath": "C:\\Users\\abukh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Domain\\obj\\",
+        "outputPath": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abukh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,6 +163,10 @@
             "AspNetCore.HealthChecks.Npgsql": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.21.1, )"
             },
             "Hangfire": {
               "target": "Package",
@@ -257,14 +269,14 @@
         }
       }
     },
-    "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Infrastructure\\University Management System.Infrastructure.csproj": {
+    "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Infrastructure\\University Management System.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Infrastructure\\University Management System.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Infrastructure\\University Management System.Infrastructure.csproj",
         "projectName": "University Management System.Infrastructure",
-        "projectPath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Infrastructure\\University Management System.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Infrastructure\\University Management System.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\abukh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abukh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -281,8 +293,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj": {
-                "projectPath": "C:\\Users\\abukh\\RiderProjects\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj"
+              "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj": {
+                "projectPath": "C:\\Users\\abukh\\RiderProjects\\InmindBackend-Track\\University Management System\\University Management System.Domain\\University Management System.Domain.csproj"
               }
             }
           }
@@ -308,6 +320,10 @@
             "AspNetCore.HealthChecks.Uris": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.21.1, )"
             },
             "Hangfire": {
               "target": "Package",

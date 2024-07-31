@@ -4,7 +4,7 @@ using Microsoft.Extensions.Caching.Memory;
 using University_Management_System.Common.Repositories;
 using University_Management_System.Infrastructure;
 
-namespace University_Management_System.Persistence.Repositories;
+namespace University_Management_System.Application.Repositories;
 
 public class CourseRepository : Repository<Course>, ICourseRepository
 {

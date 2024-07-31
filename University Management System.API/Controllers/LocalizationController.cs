@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
@@ -13,6 +14,7 @@ public class LocalizationController : ControllerBase
     }
 
     [HttpGet("hello")]
+    [Authorize(Roles = "Admin,Student,Teacher")]
     public IActionResult GetHello()
     {
         var message = _localizer["Hello"];

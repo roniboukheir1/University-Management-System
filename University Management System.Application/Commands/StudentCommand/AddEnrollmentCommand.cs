@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using MediatR;
 
 namespace University_Management_System.Application.Commands.StudentCommand;

@@ -5,7 +5,7 @@ using University_Management_System.Common.Repositories;
 using University_Management_System.Domain.Models;
 using University_Management_System.Infrastructure;
 
-namespace University_Management_System.Persistence.Repositories;
+namespace University_Management_System.Application.Repositories;
 
 public class StudentRepository : Repository<Student>,IStudentRepository
 {

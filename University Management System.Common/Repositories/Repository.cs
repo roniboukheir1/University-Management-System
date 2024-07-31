@@ -48,7 +48,6 @@ public class Repository<T> : IRepository<T> where T: class
     {
         await _context.Set<T>().AddAsync(entity);
         await _context.SaveChangesAsync();
-     //   InvalidCache();
     }
 
     public async Task UpdateAsync(T entity)

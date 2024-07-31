@@ -2,8 +2,9 @@ using Microsoft.Extensions.Caching.Memory;
 using University_Management_System.Common.Repositories;
 using University_Management_System.Domain.Models;
 using University_Management_System.Infrastructure;
+using University_Management_System.Application.Repositories;
 
-namespace University_Management_System.Persistence.Repositories;
+namespace University_Management_System.Application.Repositories;
 
 public class ClassRepository : Repository<Class> , IClassRepository
 {

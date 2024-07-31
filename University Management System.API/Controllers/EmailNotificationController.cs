@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Hangfire;
+using Microsoft.AspNetCore.Authorization;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -13,6 +14,7 @@ public class EmailNotificationController : ControllerBase
     }
 
     [HttpPost("enqueue")]
+    [Authorize(Roles = "Admin")]
     public IActionResult EnqueueEmailNotification(string to, string subject, string body)
     {
         _backgroundJobClient.Enqueue<EmailNotificationJob>(job => job.SendEmailNotificationAsync(to, subject, body));
