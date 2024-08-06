@@ -21,7 +21,6 @@ namespace University_Management_System.API.Controllers
 
         [HttpGet]
         [EnableQuery]
-        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<IEnumerable<Teacher>>> GetAllTeachers()
         {
             var query = new GetAllTeachersQuery();
@@ -30,7 +29,6 @@ namespace University_Management_System.API.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<Teacher>> GetTeacherById(long id)
         {
             var query = new GetTeacherByIdQuery { TeacherId = id };
@@ -43,7 +41,6 @@ namespace University_Management_System.API.Controllers
         }
 
         [HttpPost("AddCourse")]
-        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> AddCourse([FromBody] AddCourseCommand command)
         {
             await _mediator.Send(command);
@@ -51,7 +48,6 @@ namespace University_Management_System.API.Controllers
         }
 
         [HttpPost("AddSession")]
-        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> AddSession([FromBody] AddSessionCommand command)
         {
             await _mediator.Send(command);

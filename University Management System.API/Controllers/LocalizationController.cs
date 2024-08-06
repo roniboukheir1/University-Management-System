@@ -14,7 +14,6 @@ public class LocalizationController : ControllerBase
     }
 
     [HttpGet("hello")]
-    [Authorize(Roles = "Admin,Student,Teacher")]
     public IActionResult GetHello()
     {
         var message = _localizer["Hello"];

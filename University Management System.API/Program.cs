@@ -7,6 +7,7 @@ using Hangfire;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.OData;
 using Microsoft.Extensions.FileProviders;
+using RabbitMQ.Client;
 using University_Management_System.API.Settings;
 using University_Management_System.Application.Services;
 
@@ -20,6 +21,13 @@ builder.Services.AddControllers()
 var jwtSettings = new JWTSettings();
 builder.Configuration.GetSection(nameof(JWTSettings)).Bind(jwtSettings);
 builder.Services.AddSingleton(jwtSettings);
+builder.Services.AddSingleton<IModel>(provider =>
+{
+    var factory = new ConnectionFactory() { HostName = "localhost" };
+    var connection = factory.CreateConnection();
+    return connection.CreateModel();
+});
+builder.Services.AddScoped<CoursePublisher>();
 builder.Services.AddAuthenticationServices(builder.Configuration);
 builder.Services.AddHealthCheckServices(builder.Configuration);
 builder.Services.AddLocalizationServices();

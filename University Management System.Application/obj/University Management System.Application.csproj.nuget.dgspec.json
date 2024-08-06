@@ -91,6 +91,10 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[111.4.0, )"
@@ -210,6 +214,10 @@
             "Microsoft.Extensions.Localization": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             },
             "RestSharp": {
               "target": "Package",
@@ -355,6 +363,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             },
             "RestSharp": {
               "target": "Package",
@@ -517,6 +529,10 @@
               "target": "Package",
               "version": "[8.0.4, )"
             },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[111.4.0, )"
@@ -669,6 +685,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             },
             "RestSharp": {
               "target": "Package",

@@ -8,16 +8,16 @@ using IModel = RabbitMQ.Client.IModel;
 
 namespace University_Management_System.Application.Services;
 
-public class ClassPublisher
+public class CoursePublisher
 {
     private readonly IModel _channel;
 
-    public ClassPublisher(IModel channel)
+    public CoursePublisher(IModel channel)
     {
         _channel = channel;
     }
 
-    public void PublicClass(Course course)
+    public void PublicCourse(Course course)
     {
         var message = JsonSerializer.Serialize(course);
         var body = Encoding.UTF8.GetBytes(message);
@@ -29,7 +29,7 @@ public class ClassPublisher
             body: body);            
     }
 
-    public void PublishEnrollment(EnrollmentRequest enrollmentRequest)
+    public void PublishEnrollment(ClassEnrollment enrollmentRequest)
     {
         var message = JsonSerializer.Serialize(enrollmentRequest);
         var body = Encoding.UTF8.GetBytes(message);
@@ -39,6 +39,6 @@ public class ClassPublisher
             routingKey: "Enrollment_routing",
             basicProperties:null,
             body: body
-            );
+                );
     }
 }

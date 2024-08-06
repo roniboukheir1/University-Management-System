@@ -20,7 +20,6 @@ public class StudentsController : ControllerBase
    }
 
    [HttpPost("Enroll")]
-   [Authorize(Roles = "Admin,Student,Teacher")]
    public async Task<IActionResult> AddEnrollment([FromQuery] AddEnrollmentCommand command)
    {
       await _mediator.Send(command);
@@ -28,7 +27,6 @@ public class StudentsController : ControllerBase
    }
 
    [HttpGet("{id}")]
-   [Authorize(Roles = "Admin,Teacher")]
    public async Task<IActionResult> GetById(long id)
    {
       var query = new GetStudentByIdQuery(id);
@@ -43,8 +41,6 @@ public class StudentsController : ControllerBase
 
     
    [HttpGet()]
-   [Authorize]
-   [Authorize(Roles = "Admin,Teacher")]
    public async Task<IActionResult> GetAll()
    {
       var query = new GetAllStudentsQuery();
@@ -52,7 +48,6 @@ public class StudentsController : ControllerBase
    }
 
    [HttpPost("AddStudent")]
-   [Authorize(Roles = "Admin,Teacher")]
    public async Task<IActionResult> AddStudent([FromBody] AddStudentCommand command)
    {
       var studentId = await _mediator.Send(command);

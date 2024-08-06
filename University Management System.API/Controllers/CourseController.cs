@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using University_Management_System.Application.Commands.CourseCommand;
 using University_Management_System.Application.Queries.CourseQueries;
+using University_Management_System.Application.Services;
 using University_Management_System.Domain.Models;
 
 namespace University_Management_System.API.Controllers
@@ -15,13 +16,12 @@ namespace University_Management_System.API.Controllers
     {
         private readonly IMediator _mediator;
 
-        public CourseController(IMediator mediator)
+        public CourseController(IMediator mediator, CoursePublisher publisher)
         {
             _mediator = mediator;
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateCourse([FromBody] CreateCourseCommand command)
         {
             var courseId = await _mediator.Send(command);
@@ -29,7 +29,6 @@ namespace University_Management_System.API.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize(Roles = "Admin,Student,Teacher")]
         public async Task<IActionResult> GetCourseById(long id)
         {
             var query = new GetCourseByIdQuery { CourseId = id };

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
+using University_Management_System.Application.Services;
 using University_Management_System.Common.Exceptions;
 using University_Management_System.Common.Repositories;
 using University_Management_System.Domain.Models;
@@ -13,11 +14,13 @@ public class StudentRepository : Repository<Student>,IStudentRepository
     private readonly IMemoryCache _cache;
     private const string UserCacheKey = "UserCache";
     private const string StudentCacheKey = "StudentCache";
+    private readonly CoursePublisher _publisher;
 
-    public StudentRepository(UmsContext context, IMemoryCache cache) : base(context, cache)
+    public StudentRepository(UmsContext context, IMemoryCache cache, CoursePublisher publisher) : base(context, cache)
     {
         _context = context ;
         _cache = cache ;
+        _publisher = publisher;
     }
     
     public async Task<bool> IsEnrolledAsync(long studentId, long courseId)
@@ -66,6 +69,7 @@ public class StudentRepository : Repository<Student>,IStudentRepository
 
         await _context.ClassEnrollments.AddAsync(enrollment);
         await _context.SaveChangesAsync();
+        _publisher.PublishEnrollment(enrollment);
 
         _cache.Remove(StudentCacheKey);
     }

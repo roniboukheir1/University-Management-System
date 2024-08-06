@@ -17,7 +17,6 @@ public class FilesController : ControllerBase
     }
 
     [HttpPost("upload")]
-    [Authorize(Roles = "Admin,Student,Teacher")]
     public async Task<IActionResult> UploadFile([FromForm] UploadFileDto request)
     {
         if (request.file == null)
@@ -30,7 +29,6 @@ public class FilesController : ControllerBase
     }
 
     [HttpGet("Downlaod")]
-    [Authorize(Roles = "Admin,Student,Teacher")]
     public async Task<IActionResult> DownloadFile([FromQuery] string containerName, [FromQuery] string blobName)
     {
         byte[] fileBytes = await _fileStorageService.DownloadFileAsync(containerName, blobName);
