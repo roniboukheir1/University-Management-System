@@ -6,12 +6,40 @@ using University_Management_System.Persistence;
 using Hangfire;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.OData;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using RabbitMQ.Client;
+using University_Management_System.API.Middlewares;
 using University_Management_System.API.Settings;
 using University_Management_System.Application.Services;
+using University_Management_System.Domain.Models;
+using University_Management_System.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Tenants configuration
+var tenantConfigs = builder.Configuration.GetSection("Tenants").Get<List<TenantConfiguration>>();
+builder.Services.AddSingleton(tenantConfigs);
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddDbContext<UmsContext>((serviceProvider, options) =>
+{
+    var httpContextAccessor = serviceProvider.GetRequiredService<IHttpContextAccessor>();
+    var tenantId = httpContextAccessor.HttpContext?.Items["TenantId"]?.ToString();
+
+    if (!string.IsNullOrEmpty(tenantId))
+    {
+        var tenantConfig = tenantConfigs.FirstOrDefault(t => t.TenantId == tenantId);
+        if (tenantConfig != null)
+        {
+            options.UseNpgsql(tenantConfig.ConnectionString);
+        }
+    }
+    else
+    {
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+    }
+});
 
 // Configure services
 builder.Services.AddControllers()
@@ -33,7 +61,7 @@ builder.Services.AddHealthCheckServices(builder.Configuration);
 builder.Services.AddLocalizationServices();
 builder.Services.AddApiVersioningServices(builder.Configuration);
 builder.Services.AddSwaggerServices();
-builder.Services.AddDatabaseServices(builder.Configuration);
+//builder.Services.AddDatabaseServices(builder.Configuration);
 builder.Services.AddMemoryCache();
 builder.Services.AddHangfireServices(builder.Configuration);
 builder.Services.AddCustomServicesAndRepositories(builder.Configuration);
@@ -59,7 +87,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseRequestLocalization(LocalizationConfiguration.GetLocalizationOptions());
 app.UseAuthorization();
-
+app.UseTenantMiddleware();
 app.MapHealthChecks("/health", new HealthCheckOptions());
 app.MapControllers();
 

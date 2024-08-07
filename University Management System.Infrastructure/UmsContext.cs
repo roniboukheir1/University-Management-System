@@ -1,19 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using University_Management_System.Domain.Models;
 
 namespace University_Management_System.Infrastructure
 {
     public partial class UmsContext : DbContext
     {
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly List<TenantConfiguration> _tenantConfigs;
         public UmsContext()
         {
         }
 
-        public UmsContext(DbContextOptions<UmsContext> options)
+        public UmsContext(DbContextOptions<UmsContext> options, IHttpContextAccessor httpContextAccessor,
+            List<TenantConfiguration> tenantConfigs)
             : base(options)
         {
+            _httpContextAccessor = httpContextAccessor;
+            _tenantConfigs = tenantConfigs;
         }
 
         public virtual DbSet<ClassEnrollment> ClassEnrollments { get; set; }
@@ -32,6 +39,19 @@ namespace University_Management_System.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            var tenantId = _httpContextAccessor.HttpContext?.Items["TenantId"]?.ToString();
+            if (!string.IsNullOrEmpty(tenantId))
+            {
+                var tenantConfig = _tenantConfigs.FirstOrDefault(t => t.TenantId == tenantId);
+                if (tenantConfig != null)
+                {
+                    foreach (var entity in modelBuilder.Model.GetEntityTypes())
+                    {
+                        entity.SetSchema(tenantConfig.Schema);
+                    }
+                }
+            }
             modelBuilder.Entity<StudentCourseGrade>()
                 .HasKey(scg => scg.StudentCourseGradeId);
 
